@@ -2,7 +2,7 @@ import classes from './Cart.module.css';
 import CartModal from './CartModal';
 
 const Cart = props => {
-    const cartItems = <ul className={classes['cart-items']}>{[{ id: 'm1', name: 'Leather Wallet', amount: 2, price: 12.99 },].map((item) => <li>{item.name}</li>)}</ul>;
+    const cartItems = <ul className={classes['cart-items']}>{[{ id: 'm1', name: 'Leather Wallet', amount: 1, price: 19.95 },].map((item) => <li>{item.name}</li>)}</ul>;
     return (
         <CartModal onClose={props.onClose}>
             {cartItems}
